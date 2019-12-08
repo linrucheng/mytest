@@ -37,6 +37,10 @@ public class UcenterService {
             return new UserResult(CommonCode.FAIL);
         }
 
+        if (StringUtils.isEmpty(username)||StringUtils.isEmpty(password)){
+            return new UserResult(CommonCode.FAIL);
+        }
+
         String passwordEnCode = enCode(password);
         UserEntity byIdNumber = userRepository.findByUsernameAndPassword(username,passwordEnCode);
 
