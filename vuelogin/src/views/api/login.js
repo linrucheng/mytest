@@ -4,7 +4,6 @@ let sysConfig = require('@/../config/sysConfig')
 let apiUrl = sysConfig.longxunApiUrl
 
 
-
 export const login = (params) => {
-  return http.requestPost(apiUrl + '/cms/page/add', params)
+  return http.requestPost(apiUrl + '/ucenter/login', params)
 }

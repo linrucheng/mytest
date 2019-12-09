@@ -25,7 +25,9 @@ export default {
   },
  methods: {
    login: function () {
+     ucenterApi.login(this.user).then((res)=>{
 
+     })
    }
 
 

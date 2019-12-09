@@ -1,6 +1,6 @@
 var sysConfig = {
     xcApiUrlPre: '/api',
-    longxunApiUrl: 'http://api.ucenter.com/',
+    longxunApiUrl: 'http://api.ucenter/',
 
 }
 
