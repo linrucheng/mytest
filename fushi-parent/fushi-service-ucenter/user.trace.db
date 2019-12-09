@@ -1,0 +1,6 @@
+2019-12-08 15:06:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" not found; SQL statement:
+insert into user (create_time, id_number, password, phone, username, id) values (?, ?, ?, ?, ?, ?) [42102-199]
+2019-12-08 15:08:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USER" already exists; SQL statement:
+CREATE TABLE `user` ( `id` varchar(32) , `username` varchar(255) , `password` varchar(255) , `phone` varchar(255), `id_number` varchar(255) , `create_time` datetime , PRIMARY KEY (`id`) )  [42101-199]
