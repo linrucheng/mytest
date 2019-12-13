@@ -11,7 +11,7 @@
         }
         UserEntity userEntity=new UserEntity();
         userEntity.setUsername(username);
-        userEntity.setPassword(enCode(password));//密码加密
+        userEntity.setPassword(enCode(password));//密码加密功能
         //手机号身份证加密
         String sKey="1234567890123456";
         userEntity.setPhone(AesUtil.Encrypt(phone,sKey));
